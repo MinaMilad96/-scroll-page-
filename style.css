@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Cairo:wght@400;500;600;700;800;900&family=Joan&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    text-decoration:none;
+    list-style:none;
+    font-family: 'Joan', serif;
+}
+body{
+    background-color: #000;
+}
+html{
+    font-size:16px;
+}
+::selection{
+    background:red;
+    color:aliceblue;
+}
+/* startheader */
+.header{
+    width:100%;
+    background:rgba(0,0,0,0.1);
+    position:fixed;
+    z-index: 100;
+}
+.header .link{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:80%;
+    margin:15px auto;
+}
+.header .link .logo{
+    font-weight:bold;
+    font-size:25px;
+    color:#fff;
+}
+.header .link ul{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.header .link ul li {
+    padding:0 5px;
+}
+.header .link ul li a{
+    color:#fff;
+    padding:10px 20px;
+    transition:0.5s;
+}
+.header .link ul li a:hover,.active {
+    color: #000;
+    background:#fff;
+    border-radius:4px;
+}
+.header .link .active {
+    color: #000;
+    background: #fff;
+    border-radius: 4px;
+}
+/* endheader */
+
+/* startmain */
+.main {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow: hidden;
+}
+
+.main img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#moon {
+    mix-blend-mode: screen;
+    transform:translatey(70px);
+}
+.mina{
+    color:#fff;
+    font-size:30px;
+    transform:translateY(-140px);
+    z-index: 1;
+}
+/* endmain */
+.new{
+    width:100%;
+    height:100vh;
+    padding:40px;
+    background-color: #1a0818;
+}
+.new .content h1{
+    color:#fff;
+}
+.new .content p{
+    color:#fff;
+    margin-bottom:30px;
+}
